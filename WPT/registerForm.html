@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeration-Form</title>
+ 
+</head>
+<body>
+
+    <form id="form1">
+        <h1 style="text-align: center;">Registration Form</h1>
+        <div style="background-color: aliceblue;display: flex;flex-direction: column;width: 500px;">
+            <lable for="fname">FirstName:</lable>
+            <input id="fname" type="text" value=""  placeholder="Enter a firstName" />
+            <lable for="lname">LastName</lable>
+            <input id="lname" type="text" value="" placeholder="Enter a lastName" />
+            <lable for="date">DOB:</lable>
+            <input id="date" type="date" value="" placeholder="22/02/2002" />
+            <label for="area" >Address</label>
+            <textarea id="area" rows="5" cols="5"></textarea>
+            <div>
+                <h4>Eduction</h4>
+            
+                <input type="checkbox" id="ten" name="education" />
+                <label for="ten">10th</label>
+                
+                <input type="checkbox" id="tw" name="education" />
+                <label for="tw">12th</label>
+                
+                <input type="checkbox" id="be" name="education" />
+                <label for="be">BE</label>
+
+            </div>
+            <div>
+                <h4>Gender</h4>
+                <input type="radio" id="male" name="sex"/>
+                <label for="male">Male</label>
+                
+                <input type="radio" id="fmale" name="sex" />
+                <label for="fmale">Female</label>
+                
+                <input type="radio" id="others" name="sex" />
+                <label for="others">Others</label>
+            </div>
+            <div>
+                <h4>State</h4>
+                <select>
+                    <option>Select State</option>
+                   <option value="Mh">Maharashtra</option>
+                   <option value="Od">Odisha</option>
+                   <option value="Go">Goa</option>
+                   <option value="Ch">chennai</option>
+                </select>
+            </div>
+        </div>
+     
+
+
+    </form>
+    <button type="submit" onclick="display()">Submit</button>
+    <button type="submit" onclick="resetForm()">Rest</button>
+
+
+<script src="app.js"></script>
+</body>
+</html>
